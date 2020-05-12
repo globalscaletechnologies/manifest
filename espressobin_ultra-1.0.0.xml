@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="origin"
+           fetch="https://github.com/globalscaletechnologies" />
+
+  <default revision="master"
+           remote="origin"
+           sync-c="true"
+           sync-j="4" />
+  <!-- Projects -->
+  <project path="a3700-utils-marvell" name="A3700-utils-marvell" revision="587b9c664f1b481b153d81bbba4348b12ca6afee" groups="3k" />
+  <project path="mv-ddr-marvell" name="mv-ddr-marvell" revision="618dadd1491eb2f7b2fd74313c04f7accddae475" groups="3k,7k,8k" />
+  <project path="atf-marvell" name="atf-marvell" revision="2f0a09692475a64fb49e2458229d7dc6bf9b5e9c" groups="3k,7k,8k" />
+  <project path="u-boot-marvell" name="u-boot-marvell" revision="de6bfe8937cc5de06704af7546c5040bac2c17cd" groups="3k,7k,8k" />
+  <project path="linux" name="linux" revision="9bf49b576512cb21eb79f2c7a06fe57d5c8cb850" groups="3k,7k,8k" />
+  <project path="build" name="build" revision="668ce26a4615410f0033a9102e6bca02c2385351" groups="3k,7k,8k">
+    <linkfile  src="espressobin_ultra/env-setup.sh" dest="env-espressobin_ultra.sh" />
+  </project>
+</manifest>
