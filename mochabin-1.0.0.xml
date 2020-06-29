@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="origin"
+           fetch="https://github.com/globalscaletechnologies" />
+
+  <default revision="master"
+           remote="origin"
+           sync-c="true"
+           sync-j="4" />
+  <!-- Projects -->
+  <project path="binaries-marvell" name="binaries-marvell" revision="c6c529ea3d905a28cc77331964c466c3e2dc852e" groups="7k,8k" />
+  <project path="mv-ddr-marvell" name="mv-ddr-marvell" revision="618dadd1491eb2f7b2fd74313c04f7accddae475" groups="3k,7k,8k" />
+  <project path="atf-marvell" name="atf-marvell" revision="fa974271d4053fb53ed12a204d512966a1e0e125" groups="3k,7k,8k" />
+  <project path="u-boot-marvell" name="u-boot-marvell" revision="b5bb5cba08983b69b2d09f6b1885976b009dda21" groups="3k,7k,8k" />
+  <project path="linux" name="linux" revision="bc6a6e31fe72b431829a3275ecae019aa2b7fa92" groups="3k,7k,8k" />
+  <project path="build" name="build" revision="f39f092f235396fce6ff01dbc4190c34caf4a3d8" groups="3k,7k,8k">
+    <linkfile  src="mochabin/env-setup.sh" dest="env-mochabin.sh" />
+  </project>
+</manifest>
