@@ -8,5 +8,12 @@
            sync-c="true"
            sync-j="4" />
   <!-- Projects -->
-
+  <project path="a3700-utils-marvell" name="A3700-utils-marvell" revision="A3700_utils-armada-18.12.0-gti" groups="3k" />
+  <project path="mv-ddr-marvell" name="mv-ddr-marvell" revision="mv_ddr-armada-18.12" groups="3k,7k,8k" />
+  <project path="atf-marvell" name="atf-marvell" revision="atf-v1.5-armada-18.12" groups="3k,7k,8k" />
+  <project path="u-boot-marvell" name="u-boot-marvell" revision="u-boot-2018.03-armada-18.12-gti" groups="3k,7k,8k" />
+  <project path="linux" name="linux" revision="linux-4.19.62-gti" groups="3k,7k,8k" />
+  <project path="build" name="build" revision="espressobin-ultra" groups="3k,7k,8k">
+    <linkfile  src="espressobin_ultra/env-setup.sh" dest="env-espressobin_ultra.sh" />
+  </project>
 </manifest>
